@@ -26,7 +26,7 @@ ii)	# To find the maximum marks using the list method max().
 ```Python
 #Developed by: Gedipudi Darshani
 #RegisterNumber: 23004619
-def max_marks():
+def max_marks(marks):
     large=max(marks)
     return large
 
@@ -36,9 +36,12 @@ iii) # To find the maximum marks without using builtin functions.
 ```Python
 #Developed by: Gedipudi Darshani
 #RegisterNumber: 23004619
-def max_marks(marks):
-    large=max(marks)
-    return large
+def max_marks(list1):
+    max=list1[0]
+    for i in list1:
+        if i>max:
+            max=i
+    return max
 ```
 ## Sample Input and Output
 ![output](./img/max_marks1.jpg) 
